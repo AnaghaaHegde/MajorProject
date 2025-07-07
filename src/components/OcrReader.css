@@ -81,3 +81,18 @@
 .ocr-speak-btn:hover {
   background: #4a4e69;
 }
+
+.ocr-container {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .ocr-result {
+    font-size: 0.9rem;
+  }
+
+  select.ocr-btn {
+    width: 100%;
+  }
+}

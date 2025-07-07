@@ -1,7 +1,7 @@
 // src/utils/translate.js
 // src/utils/translate.js
 
-const API_KEY = "AIzaSyAdndizRJhdwcQzzcJaU7HeO0MijmF_f90"; // <-- Replace with your key
+const API_KEY = process.env.API_KEYY; // <-- Replace with your key
 
 const GOOGLE_TRANSLATE_URL = `https://translation.googleapis.com/language/translate/v2?key=${API_KEY}`;
 

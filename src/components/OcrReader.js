@@ -118,7 +118,12 @@ export default function OcrReader() {
         screenshotFormat="image/png"
         width={CANVAS_WIDTH}
         height={CANVAS_HEIGHT}
-        videoConstraints={{ width: CANVAS_WIDTH, height: CANVAS_HEIGHT }}
+        videoConstraints={{
+          width: CANVAS_WIDTH,
+          height: CANVAS_HEIGHT,
+          facingMode: "environment" //Use back camera on mobile
+        }}
+      
         style={{ marginTop: 16 }}
       />
 

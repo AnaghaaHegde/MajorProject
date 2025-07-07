@@ -1,4 +1,4 @@
-const GOOGLE_TTS_URL = "https://texttospeech.googleapis.com/v1/text:synthesize?key=AIzaSyDnLomUks8EeGVFUoAC94oSgqIooyC80i0"; // Replace with your API key
+const GOOGLE_TTS_URL = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${process.env.REACT_APP_GOOGLE_TTS_API_KEY}`;
 
 const VOICE_MAP = {
   en: { languageCode: "en-US", name: "en-US-Standard-C" },
